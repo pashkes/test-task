@@ -1,0 +1,142 @@
+.work {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -110px;
+  margin-bottom: 50px;
+}
+
+.work__icon {
+  position: absolute;
+  left: 41px;
+  top: 0;
+}
+
+.work__item {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  max-width: 360px;
+  flex: 1 1 300px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:first-child {
+    .icon {
+      width: 43px;
+      height: 34px;
+    }
+  }
+  &:nth-child(2) {
+    .icon {
+      width: 36px;
+      height: 30px;
+    }
+  }
+  &:nth-child(3) {
+    .icon {
+      width: 40px;
+      height: 32px;
+    }
+  }
+  &:nth-child(4) {
+    .icon {
+      width: 43px;
+      height: 41px;
+    }
+  }
+  &:nth-child(5) {
+    .icon {
+      width: 34px;
+      height: 34px;
+    }
+  }
+  &:nth-child(6) {
+    .icon {
+      width: 49px;
+      height: 38px;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333333;
+    opacity: .3;
+    transition: all .4s ease-out;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.work__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 60px;
+  background-color: #47c65f;
+}
+
+.work__title {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  text-transform: uppercase;
+  color: #fff;
+  transform: translateY(-50%);
+}
+
+.work__link {
+  position: absolute;
+  padding: 20px 40px;
+  bottom: 10px;
+  width: 108px;
+  height: 13px;
+  color: #47c65f;
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.work__img {
+  font-size: 0;
+}
+
+@media (max-width: 1024px) {
+  .work__item {
+    flex: 1 1 227px;
+  }
+}
+
+@media (max-width: 790px) {
+  .work__item {
+    flex: 1 1 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work {
+    flex-direction: column;
+  }
+  .work__item {
+    align-self: center;
+    margin-right: 0;
+    flex: 1 1 auto;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .work__item {
+  }
+}
