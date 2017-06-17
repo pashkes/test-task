@@ -127,3 +127,9 @@ function initMap() {
     });
 }
 initMap();
+
+$(window).on('resize load', function () {
+    var heightCat = $('.work__item').outerHeight() / 2;
+    heightCat = -heightCat;
+    $('.work').css('margin-top',  heightCat );
+});
