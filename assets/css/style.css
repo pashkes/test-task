@@ -1576,7 +1576,9 @@ button {
     margin-bottom: 20px; }
 
 .review__auto-info {
-  margin-top: auto; }
+  margin-top: auto;
+  font-family: 'GothamProMedium';
+  font-style: normal; }
 
 .review__slider .slick-list {
   padding-top: 56px; }
@@ -1721,7 +1723,7 @@ button {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
-  max-width: 732px;
+  max-width: 762px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
