@@ -588,16 +588,27 @@ button {
   display: -webkit-box;
   display: flex; }
 
-.header__contacts-item a {
-  color: #182a38;
-  font: 31px/1.6 'GothamProBold', Arial, sans-serif; }
-  .header__contacts-item a:hover {
-    color: #08116d; }
-
-.header__contacts-item:first-child {
-  margin-right: 46px;
-  padding-right: 46px;
-  border-right: 1px solid #c1c1c1; }
+.header__contacts-item {
+  padding-top: 11px; }
+  .header__contacts-item a {
+    color: #182a38;
+    font: 31px/1.6 'GothamProBold', Arial, sans-serif; }
+    .header__contacts-item a:hover {
+      color: #08116d; }
+  .header__contacts-item:first-child {
+    position: relative;
+    margin-right: 46px;
+    padding-right: 46px; }
+    .header__contacts-item:first-child::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      height: 53px;
+      width: 1px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      background-color: #c1c1c1; }
 
 .header__title {
   display: block;
@@ -1396,7 +1407,7 @@ button {
         fill: #fff; }
   .objects__slider svg {
     fill: #000;
-    transition: all .3s eease-out; }
+    transition: all .3s ease-out; }
 
 .objects__title {
   margin-top: 0;
@@ -1811,8 +1822,9 @@ button {
   .header__contacts-item:first-child {
     margin-bottom: 5px;
     margin-right: 0;
-    padding: 0;
-    border-right: none; }
+    padding: 0; }
+  .header__contacts-item:first-child::before {
+    display: none; }
   .header__contacts-item a {
     font-size: 14px; }
   .header__promo h1 {
@@ -2035,11 +2047,15 @@ button {
   .header__phone .icon {
     width: 20px;
     height: 20px; }
+  .header__contacts-item {
+    padding-top: 6px; }
   .header__contacts-item a {
     font-size: 16px; }
   .header__contacts-item:first-child {
     margin-right: 30px;
     padding-right: 30px; }
+  .header__contacts-item:first-child::before {
+    height: 34px; }
   .header__title {
     font-size: 15px; }
   .header__promo {
