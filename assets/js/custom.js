@@ -4,7 +4,7 @@ svg4everybody();
 
 $(function () {
     $('.js-search').on('click', function () {
-       $('.menu__search-field').toggleClass('show');
+        $('.menu__search-field').toggleClass('show');
     });
     $('.burger').on('click', function () {
         $(this).toggleClass('active');
@@ -106,4 +106,24 @@ $(function () {
             }
         ]
     });
+    $('.js-more-adres').on('click', function () {
+       $(this).parents('.contacts__block-contact').toggleClass('show');
+        $(this).text(function (i, text) {
+            return text === "Показать больше" ? "Скрыть" : "Показать больше";
+        });
+    });
 });
+
+function initMap() {
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 55.732478, lng: 37.582210},
+        scrollwheel: false,
+        zoom: 17
+    });
+    var marker = new google.maps.Marker({
+        position: {lat: 55.732478, lng: 37.582210},
+        map: map
+    });
+}
+initMap();
