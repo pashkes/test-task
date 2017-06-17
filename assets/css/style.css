@@ -1832,6 +1832,8 @@ button {
   .header__promo h1 {
     text-align: center;
     font-size: 40px; }
+  .header__contacts-item:first-child {
+    margin-right: 0; }
   .menu {
     top: 73px; }
   .menu .header__contacts {
