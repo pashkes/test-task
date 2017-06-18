@@ -2244,8 +2244,8 @@ button {
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    -webkit-box-flex: 1;
-    flex: auto; }
+    -webkit-box-flex: 0;
+    flex: none; }
   .features__item:nth-child(2n) {
     margin-right: auto; }
   .about__title {
