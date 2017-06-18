@@ -1251,16 +1251,17 @@ button {
     .features__item:nth-child(2n) {
       margin-right: 0; }
   .features__partner {
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .features__partners {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
-    margin-right: 0;
-    margin-bottom: 20px; } }
+            flex-direction: column; } }
 
 @media (max-width: 513px) {
   .features__item {
     -webkit-box-flex: 1;
-            flex: 1 1 175px; } }
+            flex: 1 1 173px; } }
 
 @media (max-width: 425px) {
   .features__title {
