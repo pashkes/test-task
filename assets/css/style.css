@@ -1018,7 +1018,8 @@ button {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  transition: margin-top 1s ease 1.30s; }
 
 .work__icon {
   position: absolute;
