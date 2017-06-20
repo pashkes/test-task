@@ -697,8 +697,6 @@ button {
     font-size: 15px; }
   .header__promo {
     min-height: calc(100vh - 98px); }
-    .header__promo h1 {
-      font-size: 45px; }
     .header__promo::before {
       display: none; }
   .header__promo {
@@ -742,14 +740,9 @@ button {
   .header__contacts-item a {
     font-size: 14px; }
   .header__promo h1 {
-    text-align: center;
-    font-size: 40px; }
+    text-align: center; }
   .header__contacts-item:first-child {
     margin-right: 0; } }
-
-@media (max-width: 425px) {
-  .header__promo h1 {
-    font-size: 30px; } }
 
 .menu {
   display: -webkit-box;
@@ -831,8 +824,8 @@ button {
     margin-bottom: -45px;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    transition: all .35s ease-out;
-    min-height: 100%; }
+    overflow-y: auto;
+    transition: all .35s ease-out; }
     .menu.show {
       -webkit-transform: none;
               transform: none; }
